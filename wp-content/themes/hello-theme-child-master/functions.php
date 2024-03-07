@@ -34,3 +34,43 @@ function hello_elementor_child_scripts_styles() {
 
 }
 add_action( 'wp_enqueue_scripts', 'hello_elementor_child_scripts_styles', 20 );
+
+/**
+ * Add admin button
+ */
+
+ function add_admin_link( $items , $args) {
+	if(is_user_logged_in()) {
+		$items .= '<li><a href="'. get_admin_url() .'">Admin</a></li>';
+	}
+	return $items;
+}
+
+add_filter( 'wp_nav_menu_items', 'add_admin_link', 10, 2);
+
+
+// add_filter( 'wp_nav_menu_items','add_admin_link', 10, 2 );
+
+ 
+
+// function add_admin_link( $items, $args ) {
+
+ 
+
+// if (is_user_logged_in() && $args->theme_location == 'menu-1') {
+
+ 
+
+// $items .= '<li><a href="'. get_admin_url() .'">Admin</a></li>';
+
+ 
+
+// }
+
+ 
+
+// return $items;
+
+ 
+
+// }
