@@ -40,6 +40,12 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
     border-top: 1px solid white;
 }
 
+.form-commande label{
+    margin-bottom: 3%;
+    margin-top: 3%;
+    padding-bottom: 3%;
+}
+
 .form-gauche{
     display: flex;
     flex-direction: column;
@@ -70,6 +76,17 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
 
 }
 
+.site-navigation a{
+    color: black;
+}
+
 #menu-header-test :nth-child(2) {
     order:3;
+    background-color: #DC9F96;
+    color: white;    
+    
+}
+
+#menu-header-test :nth-child(2) a{
+    color: white;    
 }
