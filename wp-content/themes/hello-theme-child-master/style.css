@@ -129,6 +129,29 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
     text-align: center;
 }
 
+[type=button], [type=submit], button {
+    display: inline-block;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: #DC9F96;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 3px;
+    transition: all .3s;
+    margin-bottom: 2%;
+}
+
+/* @media screen and (min-width: 768px){
+    .elementor-element-4efabc7{
+        display: none;
+    }
+} */
 ______________________
 ______________________
 ______________________
@@ -152,6 +175,11 @@ ______________________
     border-top: 1px solid white;
 }
 
+.form-commande-mobile label{
+    color: white;
+    width: 100%;
+}
+
 .fruits-mobile{
     font-family: Syne;
     font-size: 20px;
@@ -165,3 +193,12 @@ ______________________
     color: #55595c;
     box-shadow: none;
 }
+
+/* @media screen and (max-width: 1150px) {
+
+    .wp-image-84{
+        position: relative;
+        background-color: black;
+    }
+
+} */
